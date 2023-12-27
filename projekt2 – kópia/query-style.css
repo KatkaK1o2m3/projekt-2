@@ -1,0 +1,47 @@
+@media(max-width:600px) {
+
+    header{
+        position: relative;
+    }
+    
+
+    nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color: #15304c;
+        width:100%;  
+    }
+
+    nav li{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon{
+        display: block;
+        color:white;
+        font-size: 23px;
+    }
+    
+    .main-icon{
+        display: flex;
+        align-items: right;
+    }
+    
+    .main-icon img{
+        width:25%;
+        height:75px;
+    }
+
+    .form h1 {
+        font-size: 25px;
+}
+}
+
+@media (min-width: 600px){
+    header nav {
+        display: block!important;       
+    }
+}

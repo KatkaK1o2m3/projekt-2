@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:root {
+    --col-white: #fff;
+    --col-red: red;
+    --dark-blue: #15304c;
+    --special-yellow: rgb(216, 179, 29);
+  }
+
+body {
+    font-family: UnifrakturMaguntia, sans-serif;
+  }
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--dark-blue) ;
+    height:70px;
+}
+
+.logo{
+    flex-grow: 1;
+}
+
+.logo img{
+    width: 200px;
+    margin-left: 20px;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px; 
+    font-size: 20px; 
+}
+
+nav a{
+    color:var(--col-white);
+    text-decoration: none;
+}
+
+.menu-icon{
+    display: none;
+    margin-right: 30px;
+}
+
+.welcome{
+    background: url("img/background.webp");
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 70px);
+    background-size: cover;
+    background-position: center ;
+
+}
+
+.main-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-icon img{
+    width:20%;
+    height:175px;
+}
+
+button{
+background-color: var(--dark-blue);
+color:var(--col-white);
+margin-right:20px;
+padding:10px;
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form h1 {
+    font-size: 40px;
+    color: var(--special-yellow);
+    margin-bottom: 10px;
+    
+}
+
+.notificationName, .notificationEmail, .notificationSubmit {
+    font-family: sans-serif;
+    display: none;
+    color: var(--col-red);
+    margin-top: 10px;
+}
+
+.email, .fullName {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--col-white);
+    margin: 10px 0;
+    padding: 5px 10px;
+    outline:none;
+    color:var(--col-white);
+    text-align: center;
+
+}
+
+input {
+    background-color: var(--special-yellow);
+    color: var(--dark-blue);
+    margin:10px 0;
+    padding: 5px 10px;
+
+}
+
